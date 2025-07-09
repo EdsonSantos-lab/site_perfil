@@ -1,0 +1,35 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #2193b0, #6dd5ed);
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight {
+      color: #4dd0e1;
+      font-weight: bold;
+    }
+
+    .contact {
+      font-size: 0.9em;
+      margin-top: 10px;
+      line-height: 1.5;
+      text-align: center;
+    }
