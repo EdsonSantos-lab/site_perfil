@@ -1,10 +1,188 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio - Edson Santos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+      color: #bbb;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .tags {
+      margin: 10px 0;
+    }
+    .tag {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Edson Santos</h1>
+    <p>Desenvolvedor Python | Web | Automação</p>
+  </header>
 
-{% block body %}
-    <div class="alert alert-danger" role="alert">
-        Pagina em manutenção
-    </div>
+  <section>
+    <h2>📌 Projetos (15)</h2>
+    <div class="projects" id="projects-container"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 - Edson Santos | <a href="https://github.com/EdsonSantos-lab" style="color:#4DA8FF;">GitHub</a> | <a href="https://www.linkedin.com/in/edson-santos-6a60b3292/" style="color:#4DA8FF;">LinkedIn</a></p>
+  </footer>
+
+  <script>
+    const projects = [
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/sistema_cota-o_tkinter">💠 Sistema de Cotação de Moedas em Python</a>',
+        description: "Aplicação desktop em Python para consultar e atualizar cotações de moedas em tempo real, utilizando a API da AwesomeAPI.",
+        technologies: ["Python 3", "Tkinter", "Requests", "Pandas", "Numpy", "Openpyxl"],
+        features: [
+          "✔ Consulta da cotação de uma moeda específica em uma data escolhida",
+          "✔ Atualização de múltiplas moedas a partir de arquivo Excel",
+          "✔ Exportação automática para Excel",
+          "✔ Interface gráfica simples e intuitiva"
+        ],
+        learnings: [
+          "Integração do Python com APIs externas",
+          "Construção de interfaces gráficas com Tkinter",
+          "Manipulação de arquivos Excel",
+          "Organização do fluxo entre interface, API e persistência"
+        ]
+      },
+      {
+        title: "💠 Sistema Flappy Bird em Python",
+        description: "Este projeto é uma recriação do clássico jogo Flappy Bird, desenvolvida totalmente em Python utilizando a biblioteca Pygame.",
+        technologies: ["PYTHON 3", "PYGAME"],
+        features: [
+          "✔ Controle do pássaro com a tecla espaço.",
+          "✔ Sistema de pontuação em tempo real.",
+          "✔ Detecção de colisões precisa usando masks.",
+          "✔ Geração aleatória da altura dos obstáculos.",
+          "✔ Movimentação contínua do chão e dos canos."
+        ],
+        learnings: [
+          "Controle de eventos e detecção de colisões.",
+          "Manipulação de imagens e sprites.",
+          "Programação orientada a objetos.",
+          "Estruturação de jogos 2D."
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/sistema_cota-o_tkinter">💠 Sistema de Cotação de Moedas em Python</a>',
+        description: "Aplicação desktop em Python para consultar e atualizar cotações de moedas em tempo real, utilizando a API da AwesomeAPI.",
+        technologies: ["Python 3", "Tkinter", "Requests", "Pandas", "Numpy", "Openpyxl"],
+        features: [
+          "✔ Consulta da cotação de uma moeda específica em uma data escolhida",
+          "✔ Atualização de múltiplas moedas a partir de arquivo Excel",
+          "✔ Exportação automática para Excel",
+          "✔ Interface gráfica simples e intuitiva"
+        ],
+        learnings: [
+          "Integração do Python com APIs externas",
+          "Construção de interfaces gráficas com Tkinter",
+          "Manipulação de arquivos Excel",
+          "Organização do fluxo entre interface, API e persistência"
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/sistema_cota-o_tkinter">💠 Sistema de Cotação de Moedas em Python</a>',
+        description: "Aplicação desktop em Python para consultar e atualizar cotações de moedas em tempo real, utilizando a API da AwesomeAPI.",
+        technologies: ["Python 3", "Tkinter", "Requests", "Pandas", "Numpy", "Openpyxl"],
+        features: [
+          "✔ Consulta da cotação de uma moeda específica em uma data escolhida",
+          "✔ Atualização de múltiplas moedas a partir de arquivo Excel",
+          "✔ Exportação automática para Excel",
+          "✔ Interface gráfica simples e intuitiva"
+        ],
+        learnings: [
+          "Integração do Python com APIs externas",
+          "Construção de interfaces gráficas com Tkinter",
+          "Manipulação de arquivos Excel",
+          "Organização do fluxo entre interface, API e persistência"
+        ]
+      }
 
 
-{% endblock %}
+    ];
+
+    function renderProjects() {
+      const container = document.getElementById("projects-container");
+      projects.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <h3>${p.title}</h3>
+          <p>${p.description}</p>
+          <div class="tags">${p.technologies.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+          <h4>Funcionalidades:</h4>
+          <ul>${p.features.map(f => `<li>${f}</li>`).join("")}</ul>
+          <h4>Aprendizados:</h4>
+          <ul>${p.learnings.map(l => `<li>${l}</li>`).join("")}</ul>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    renderProjects();
+  </script>
+</body>
+</html>
+
 
