@@ -6,11 +6,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio - Edson Santos</title>
-  <style>
+  <style >
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f5f5f5;
+      background: #65CEE6;
       color: #333;
     }
     header {
@@ -82,7 +82,7 @@
   </header>
 
   <section>
-    <h2>📌 Projetos (15)</h2>
+    <h2>📌 Projetos (12)</h2>
     <div class="projects" id="projects-container"></div>
   </section>
 
@@ -110,9 +110,9 @@
         ]
       },
       {
-        title: "💠 Sistema Flappy Bird em Python",
+        title: '<a href="https://github.com/EdsonSantos-lab/Replica_-FlappyBird"> 💠 Sistema Flappy Bird em Python</a>',
         description: "Este projeto é uma recriação do clássico jogo Flappy Bird, desenvolvida totalmente em Python utilizando a biblioteca Pygame.",
-        technologies: ["PYTHON 3", "PYGAME"],
+        technologies: ["Python", "Pygame"],
         features: [
           "✔ Controle do pássaro com a tecla espaço.",
           "✔ Sistema de pontuação em tempo real.",
@@ -128,9 +128,42 @@
         ]
       },
       {
-        title: '<a href="https://github.com/EdsonSantos-lab/sistema_cota-o_tkinter">💠 Sistema de Cotação de Moedas em Python</a>',
-        description: "Aplicação desktop em Python para consultar e atualizar cotações de moedas em tempo real, utilizando a API da AwesomeAPI.",
-        technologies: ["Python 3", "Tkinter", "Requests", "Pandas", "Numpy", "Openpyxl"],
+        title: '<a href="https://github.com/EdsonSantos-lab/Projeto-de-Consulta-de-CPF">💠 Automação de Consulta de Situação de CPF</a>',
+        description: "Descrição: Projeto que automatiza a verificação da situação de CPFs de clientes em uma plataforma web. Ele integra Python, Selenium e OpenPyXL para consultar, processar e registrar informações de forma rápida e precisa. O sistema lê dados de uma planilha de clientes, realiza consultas automáticas e atualiza uma planilha de fechamento com os resultados.",
+        technologies: ["Python ", "Selenium", "Openpyxl"],
+        features: [
+          "Eficiência: Otimiza tempo e recursos em processos de verificação financeira.",
+          "Organização: Mantém todas as informações atualizadas em uma planilha estruturada.",
+          "Redução de trabalho manual: Consulta dezenas ou centenas de CPFs de forma automática."
+
+        ],
+        learnings: [
+          "Importa informações de uma planilha",
+          "Processar grandes volumes de dados automaticamente.",
+          "Leitura de Dados do Cliente"
+
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/Preenchimento-de-Certificados">💠 Automação de Emissão de Certificados</a>',
+        description: "Este projeto automatiza a criação de certificados personalizados para participantes de cursos, lendo informações de uma planilha Excel e gerando arquivos de imagem individuais. Cria certificados de forma rápida e profissional.",
+        technologies: ["Python ", "Pillow", "Pandas"],
+        features: [
+          "✔ Importa a planilha planilha_alunos.xlsx contendo informações dos participantes",
+          "✔ Para cada linha da planilha, insere os dados do participante nos locais corretos do certificado.",
+          "✔ Utiliza a classe ImageDraw para adicionar textos sobre a imagem. ",
+          "✔ Leitura de dados do Excel"
+        ],
+        learnings: [
+          "Importação de dados",
+          "Sobrescrever texto em imagens",
+          "Manipulação de arquivos Excel"
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/ProjetodeConsultas-site">💠 Automação de Preenchimento de Formulários com Selenium</a>',
+        description: "Este projeto demonstra a automação de tarefas repetitivas em navegadores web usando Python e Selenium WebDriver. Ele lê dados de uma planilha Excel e preenche automaticamente formulários em um site local (index.html), simulando interações humanas como cliques, preenchimento de campos e navegação entre abas.",
+        technologies: ["Python", "WebDriver", "Excel", "Numpy", "Openpyxl"],
         features: [
           "✔ Consulta da cotação de uma moeda específica em uma data escolhida",
           "✔ Atualização de múltiplas moedas a partir de arquivo Excel",
@@ -145,23 +178,112 @@
         ]
       },
       {
-        title: '<a href="https://github.com/EdsonSantos-lab/sistema_cota-o_tkinter">💠 Sistema de Cotação de Moedas em Python</a>',
-        description: "Aplicação desktop em Python para consultar e atualizar cotações de moedas em tempo real, utilizando a API da AwesomeAPI.",
-        technologies: ["Python 3", "Tkinter", "Requests", "Pandas", "Numpy", "Openpyxl"],
+        title: '<a href=""https://github.com/EdsonSantos-lab/Sistema_Inventario>💠 Sistema de Inventário Doméstico</a>',
+        description: "Este projeto é uma aplicação desktop desenvolvida em Python para controle de inventário doméstico. O sistema permite cadastrar, visualizar, atualizar e excluir itens de uma base de dados, além de associar imagens aos registros",
+        technologies: ["Python", "SQLite", "Tkinter", "PIL", "tkcalendar"],
         features: [
-          "✔ Consulta da cotação de uma moeda específica em uma data escolhida",
-          "✔ Atualização de múltiplas moedas a partir de arquivo Excel",
-          "✔ Exportação automática para Excel",
-          "✔ Interface gráfica simples e intuitiva"
+          "✔ Cadastro de itens com nome, descrição, local, marca/modelo, valor, data de compra e número de série",
+          "✔ Funções de CRUD completo ",
+          "✔ Consulta em tabela interativa com scrollbars. ",
+          "✔ Upload de imagem associada ao item"
         ],
         learnings: [
-          "Integração do Python com APIs externas",
-          "Construção de interfaces gráficas com Tkinter",
-          "Manipulação de arquivos Excel",
-          "Organização do fluxo entre interface, API e persistência"
+          "Aprendizados Construção de interfaces gráficas completas com Tkinter.",
+          "Organização de código com camada de visualização e banco (view.py)."
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/Jogo-do-Dino-pyautogui">💠 Bot de Automação com PyAutoGUI</a>',
+        description: "Este projeto é um bot em Python que utiliza a biblioteca PyAutoGUI para automatizar cliques de acordo com a cor de pixels na tela. Ele funciona como uma forma de robô de interação automática, podendo ser aplicado em jogos, testes de interface ou automações de tarefas repetitivas.",
+        technologies: ["Python", "Pyautogui"],
+        features: [
+          "✔ Monitora a cor de um pixel em uma posição fixa da tela",
+          "✔ Captura em tempo real a posição e cor do mouse. ",
+          "✔ Executa cliques automáticos quando a cor monitorada muda.",
+          "✔ Exibe mensagens no console para acompanhamento do processo."
+        ],
+        learnings: [
+          "Construção de bots simples para jogos ou testes de software.",
+          "Uso de cores RGB para detecção de mudanças visuais.",
+          "Automatizar interações com mouse e tela em Python."
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/RelogioDigital">💠 Relógio Digital em Python</a>',
+        description: "Este projeto é um relógio digital interativo, desenvolvido em Python utilizando a biblioteca Tkinter para interface gráfica",
+        technologies: ["Python", "Tkinter", "Time.strftime"],
+        features: [
+          "✔ Atualização automática a cada segundo.Interface simples e personalizável (cores e fontes).",
+          "✔ Exibe a hora atual em tempo real (HH:MM:SS).",
+          "✔ Interface simples e personalizável (cores e fontes)."
+        ],
+        learnings: [
+          "criar interfaces gráficas simples com Tkinter.",
+          "Atualização de elementos em tempo real usando after().",
+          "Manipulação de data/hora em Python."
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/pyplot">💠 Análise de Vendas com Visualização</a>',
+        description: "Este projeto tem como objetivo criar uma visualização simples e intuitiva das vendas mensais utilizando a biblioteca Matplotlib. O gráfico mostra os resultados de cada mês e destaca automaticamente os pontos de maior relevância, como os menores valores de vendas.",
+        technologies: ["Python", "Matplolib"],
+        features: [
+          "✔ Criação de gráfico de dispersão (scatter plot) para representar vendas por mês",
+          "✔ Anotação de pontos específicos no gráfico, com seta e texto explicativo",
+          "✔  Customização com título, legendas e cores para melhor visualização"
+        ],
+        learnings: [
+          "Conceitos de data visualization aplicados em Python",
+          "Uso da função annotate() para destacar informações importantes",
+          "Como utilizar o Matplotlib para criar gráficos personalizados"
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/GeradorSenhas/tree/main">💠Gerador de Senhas </a>',
+        description: "Este projeto é um gerador automático de senhas que cria combinações de caracteres utilizando letras, números e símbolos especiais. O objetivo é facilitar a criação de senhas seguras e únicas, ideais para uso em contas pessoais, sistemas ou aplicações.",
+        technologies: ["Python", "Biblioteca random"],
+        features: [
+          "✔ Senhas de 4 dígitos geradas de forma aleatória e independente",
+          "✔ Exibição organizada e destacada no terminal, com cores para melhor visualização ",
+          "✔ Uso de letras maiúsculas, minúsculas, dígitos e caracteres especiais ",
+          "✔ Geração de múltiplas senhas em uma única execução "
+        ],
+        learnings: [
+          "Estruturação de código com funções reutilizáveis",
+          "Formatação colorida no terminal para melhorar a experiência do usuário"
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/app-de-compras">💠Projeto: Lista de Compras</a>',
+        description: "Este projeto é um gerenciador de lista de compras feito em Python. Ele permite criar listas, adicionar/remover itens, visualizar o carrinho e salvar os dados em um arquivo .json para carregar depois.",
+        technologies: ["Módulo JSON", "Estruturas de dados"],
+        features: [
+          "✔ Criar uma nova lista de compras ",
+          "✔ Adicionar itens com quantidades ",
+          "✔ Remover itens",
+          "✔ Visualizar lista atual"
+        ],
+        learnings: [
+          "Tratamento de erros (ex.: arquivo inexistente)",
+          "Estruturação de menus interativo",
+          "Manipulação de arquivos JSON em Python"
+        ]
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/Projeto-de-Cadastro">💠 Automação Completa de Cadastro de Produtos em Web App</a>',
+        description: "ste projeto automatiza o cadastro de produtos em um sistema web, lendo informações de uma planilha Excel e preenchendo campos de formulários de maneira precisa e rápida. Ele combina técnicas de automação de navegador com Selenium, automação de interface gráfica com PyAutoGUI e manipulação de arquivos Excel com OpenPyXL.",
+        technologies: ["Selenium", "Pyautogui", "Pyperclip"],
+        features: [
+          "✔ Simular cliques precisos em coordenadas da tela ",
+          "✔ Inicializa o navegador Chrome com Selenium WebDriver.",
+          "✔ Inicialização e Navegação Automática"
+        ],
+        learnings: [
+          "Integração de tecnologias",
+          "Precisão",
+          "Redução de tarefas manuais"
         ]
       }
-
 
     ];
 
@@ -189,7 +311,9 @@
 </html>
 
 
+
 {% endblock %}
+
 
 
 
