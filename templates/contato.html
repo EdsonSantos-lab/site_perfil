@@ -82,7 +82,7 @@
   </header>
 
   <section>
-    <h2>📌 Projetos (12)</h2>
+    <h2>📌 Projetos (13)</h2>
     <div class="projects" id="projects-container"></div>
   </section>
 
@@ -178,7 +178,7 @@
         ]
       },
       {
-        title: '<a href=""https://github.com/EdsonSantos-lab/Sistema_Inventario>💠 Sistema de Inventário Doméstico</a>',
+        title: '<a href="https://github.com/EdsonSantos-lab/Sistema_Inventario">💠 Sistema de Inventário Doméstico</a>',
         description: "Este projeto é uma aplicação desktop desenvolvida em Python para controle de inventário doméstico. O sistema permite cadastrar, visualizar, atualizar e excluir itens de uma base de dados, além de associar imagens aos registros",
         technologies: ["Python", "SQLite", "Tkinter", "PIL", "tkcalendar"],
         features: [
@@ -271,7 +271,7 @@
       },
       {
         title: '<a href="https://github.com/EdsonSantos-lab/Projeto-de-Cadastro">💠 Automação Completa de Cadastro de Produtos em Web App</a>',
-        description: "ste projeto automatiza o cadastro de produtos em um sistema web, lendo informações de uma planilha Excel e preenchendo campos de formulários de maneira precisa e rápida. Ele combina técnicas de automação de navegador com Selenium, automação de interface gráfica com PyAutoGUI e manipulação de arquivos Excel com OpenPyXL.",
+        description: "Este projeto automatiza o cadastro de produtos em um sistema web, lendo informações de uma planilha Excel e preenchendo campos de formulários de maneira precisa e rápida. Ele combina técnicas de automação de navegador com Selenium, automação de interface gráfica com PyAutoGUI e manipulação de arquivos Excel com OpenPyXL.",
         technologies: ["Selenium", "Pyautogui", "Pyperclip"],
         features: [
           "✔ Simular cliques precisos em coordenadas da tela ",
@@ -283,7 +283,26 @@
           "Precisão",
           "Redução de tarefas manuais"
         ]
-      }
+      },
+      {
+        title: '<a href="https://github.com/EdsonSantos-lab/aplicativo-com-kivy"> 💠 Aplicativo de Vendas</a>',
+        description: "Este projeto demonstra a criação de um aplicativo mobile utilizando Kivy, um framework Python multiplataforma capaz de gerar apps para Android, Windows, Linux e mais. O foco deste projeto é ensinar a estrutura, funcionamento e boas práticas para desenvolvimento de aplicativos completos.",
+        technologies: ["Python 3", "Firebase", "Kivy", "Buildozer"],
+        features: [
+          "✔ Sistema de vendas completo",
+          "✔ Login e criação de conta utilizando Firebase Authentication (REST API).",
+          "✔ Sistema de vendedores e equipes",
+          "✔ Integração completa com o Firebase Realtime Database (GET, PATCH, PUT).",
+          "✔ Sistema de múltiplas telas usando ScreenManager."
+        ],
+        learnings: [
+          "Manipulação de Dados no App",
+          "Integração com Firebase",
+          "Kivy e Estrutura de Interfaces",
+          "Conexão entre Python ↔ KV"
+        ]
+      },
+
 
     ];
 
@@ -302,7 +321,8 @@
           <ul>${p.learnings.map(l => `<li>${l}</li>`).join("")}</ul>
         `;
         container.appendChild(card);
-      });
+      }
+      );
     }
 
     renderProjects();
@@ -313,7 +333,3 @@
 
 
 {% endblock %}
-
-
-
-
